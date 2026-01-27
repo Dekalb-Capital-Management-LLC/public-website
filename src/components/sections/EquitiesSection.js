@@ -3,14 +3,14 @@ import ScrollAnimation from "../common/ScrollAnimation";
 
 export default function EquitiesSection() {
     return (
-        <section id="equities-section" className="bg-primary text-slate-900 py-24 px-6 relative">
+        <section id="equities-section" className="bg-slate-800 text-slate-900 py-24 px-6 relative">
             {/* Divider */}
             <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
 
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
                 <div className="order-2 md:order-1">
-                    <h4 className="text-accent font-bold uppercase text-sm tracking-widest mb-2">Equities Team</h4>
+                    <h4 className="text-slate-300 font-bold uppercase text-sm tracking-widest mb-2">Equities Team</h4>
                     <h2 className="text-3xl md:text-4xl font-bold mb-8 font-heading text-white">The Equities Division</h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">

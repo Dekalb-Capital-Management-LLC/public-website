@@ -66,9 +66,9 @@ function News() {
       </section>
 
       {/* quote section */}
-      <section className="py-32 px-6 text-center">
-         <h4 className="text-gray-400 font-bold uppercase text-xs mb-4">Dekalb Capital Management LLC</h4>
-         <h2 className="text-4xl md:text-5xl font-bold max-w-4xl mx-auto">
+      <section className="py-32 px-6 text-center bg-slate-800">
+         <h4 className="text-white font-bold uppercase text-xs mb-4">Dekalb Capital Management LLC</h4>
+         <h2 className="text-4xl text-white md:text-5xl font-bold max-w-4xl mx-auto">
            A collective of technical excellence and intellectual curiosity.
          </h2>
       </section>

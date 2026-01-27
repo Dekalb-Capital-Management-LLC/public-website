@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import domImg from "../../assets/headshots/Dom.jpg";
+import domImg from "../../assets/headshots/Dom.png";
 import shriImg from "../../assets/headshots/Shridhar.JPEG";
 import jennaImg from "../../assets/headshots/JennaLee.jpg";
 import jayantImg from "../../assets/headshots/Jayant.jpeg";
+import tanishq from "../../assets/headshots/TanishqHeadshot.jpg";
+import tim from "../../assets/headshots/Timheadshot.jpg";
 
 function Card({ img, name, role, email }) {
   return (
@@ -55,6 +57,18 @@ export default function CardGrid() {
       role: "Finance & Computer Science @ IU Kelley",
       email: "Jaskatra@iu.edu",
       img: jayantImg,
+    },
+    {
+      name: "Jayant Katragadda",
+      role: "Finance & Computer Science @ IU Kelley",
+      email: "Jaskatra@iu.edu",
+      img: tanishq,
+    },
+    {
+      name: "Jayant Katragadda",
+      role: "Finance & Computer Science @ IU Kelley",
+      email: "Jaskatra@iu.edu",
+      img: tim,
     },
   ];
 

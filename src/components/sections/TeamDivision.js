@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollAnimation from "../common/ScrollAnimation";
-import teamBackground from "../../assets/teamBackground.webp";
+import teamBackground from "../../assets/teamBackground.jpg";
 
 export default function TeamDivision() {
     const scrollToSection = (id) => {
@@ -11,7 +11,7 @@ export default function TeamDivision() {
     };
 
     return (
-        <section className="relative py-24 px-6 overflow-hidden">
+        <section className="relative py-32 px-6 overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
@@ -19,7 +19,7 @@ export default function TeamDivision() {
                     alt="Team Background"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-primary/60"></div>
+                <div className="absolute inset-0 bg-primary/70"></div>
             </div>
 
             <div className="max-w-6xl text-left mx-auto text-center relative z-10">
