@@ -4,7 +4,7 @@ import ScrollAnimation from "../common/ScrollAnimation";
 
 export default function NewsSection() {
   return (
-    <section className="bg-slate-400 py-24 px-6 text-center">
+    <section className="bg-secondary py-24 px-6 text-center">
       <ScrollAnimation animation="fade-in-up">
         <h1 className="text-6xl md:text-5xl font-bold mb-8 max-w-4xl mx-auto font-heading text-primary">News & Updates</h1>
       </ScrollAnimation>

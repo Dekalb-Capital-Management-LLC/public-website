@@ -3,7 +3,7 @@ import ScrollAnimation from "../common/ScrollAnimation";
 
 export default function AboutSection() {
   return (
-    <section className="relative py-24 px-6 bg-slate-700 text-white overflow-hidden">
+    <section className="relative py-24 px-6 bg-primary text-white overflow-hidden">
       <div className="max-w-6xl mx-auto text-center">
         <ScrollAnimation animation="fade-in-up">
           <h4 className="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase">
