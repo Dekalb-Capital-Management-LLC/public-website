@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../common/Button";
 import ScrollAnimation from "../common/ScrollAnimation";
 
 export default function NewsSection() {

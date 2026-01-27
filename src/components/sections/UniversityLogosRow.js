@@ -1,5 +1,4 @@
 import React from "react";
-import ScrollAnimation from "../common/ScrollAnimation";
 import indianaLogo from "../../assets/logos/indiana.webp";
 import texasLogo from "../../assets/logos/ut-logo.png";
 import illinoisLogo from "../../assets/logos/illinois.jpeg";

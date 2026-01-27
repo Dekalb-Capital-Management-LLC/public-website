@@ -1,5 +1,4 @@
 import React from "react";
-import ScrollAnimation from "../common/ScrollAnimation";
 
 export default function QuantSection() {
     return (

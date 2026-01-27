@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../common/Button";
 import ScrollAnimation from "../common/ScrollAnimation";
 import backgroundVideo from "../../assets/background.mp4";
 
