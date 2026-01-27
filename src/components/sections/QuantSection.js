@@ -6,10 +6,7 @@ export default function QuantSection() {
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
                 {/* Visual Graphic Placeholder */}
                 <div className="bg-white rounded-2xl shadow-xl aspect-square flex items-center justify-center text-gray-300 border border-gray-100 p-8">
-                    <div className="text-center">
-                        <span className="block text-6xl mb-4">📊</span>
-                        <span className="text-sm uppercase tracking-widest font-semibold">Quantitative Model Visualization</span>
-                    </div>
+
                 </div>
 
                 <div>

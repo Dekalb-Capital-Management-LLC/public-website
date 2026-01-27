@@ -1,5 +1,4 @@
 import React from "react";
-import ScrollAnimation from "../common/ScrollAnimation";
 
 export default function EquitiesSection() {
     return (
@@ -38,14 +37,8 @@ export default function EquitiesSection() {
 
                 {/* Visual Graphic Placeholder */}
                 <div className="order-1 md:order-2">
-                    <ScrollAnimation animation="fade-in-up" delay={200}>
                         <div className="bg-gray-50 rounded-2xl shadow-xl aspect-square flex items-center justify-center text-gray-300 border border-gray-100 p-8">
-                            <div className="text-center">
-                                <span className="block text-6xl mb-4">📈</span>
-                                <span className="text-sm uppercase tracking-widest font-semibold">Equities Growth Chart</span>
-                            </div>
                         </div>
-                    </ScrollAnimation>
                 </div>
 
             </div>
