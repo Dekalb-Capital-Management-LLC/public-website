@@ -1,4 +1,5 @@
 import React from "react";
+import equitiesImage from "../../assets/equities.webp";
 
 export default function EquitiesSection() {
     return (
@@ -35,10 +36,11 @@ export default function EquitiesSection() {
                     </div>
                 </div>
 
-                {/* Visual Graphic Placeholder */}
+                {/* Visual Graphic */}
                 <div className="order-1 md:order-2">
-                        <div className="bg-gray-50 rounded-2xl shadow-xl aspect-square flex items-center justify-center text-gray-300 border border-gray-100 p-8">
-                        </div>
+                    <div className="bg-gray-50 rounded-2xl shadow-xl overflow-hidden border border-gray-800 h-[550px]">
+                        <img src={equitiesImage} alt="Equities Division" className="w-full h-full object-cover" />
+                    </div>
                 </div>
 
             </div>

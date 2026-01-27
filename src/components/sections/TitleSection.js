@@ -5,7 +5,7 @@ import backgroundVideo from "../../assets/background.mp4";
 
 export default function TitleSection({
   title = "Driven by passion. Proven by performance.",
-  subtitle = "Founded in the summer of 2024 and officially incorporated that August, Dekalb Capital Management was established to apply rigorous academic theory to active market trading.",
+  subtitle = "Founded in the summer of 2024 and officially incorporated in August of 2024, Dekalb Capital Management was established to apply rigorous academic theory to active market trading.",
 }) {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">

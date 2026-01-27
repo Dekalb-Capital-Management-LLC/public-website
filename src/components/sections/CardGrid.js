@@ -44,6 +44,7 @@ export default function CardGrid() {
     {
       name: "Shridhar Mehendale",
       role: "Computer Science & Business Honors @ UT Austin",
+      email: "smehendale@utexas.edu",
       img: shriImg,
     },
     {
@@ -59,15 +60,13 @@ export default function CardGrid() {
       img: jayantImg,
     },
     {
-      name: "Jayant Katragadda",
-      role: "Finance & Computer Science @ IU Kelley",
-      email: "Jaskatra@iu.edu",
+      name: "Tanishq Nerkar",
+      role: "Northern Illinois University",
       img: tanishq,
     },
     {
-      name: "Jayant Katragadda",
-      role: "Finance & Computer Science @ IU Kelley",
-      email: "Jaskatra@iu.edu",
+      name: "Tim Schramek",
+      role: "IU Kelley",
       img: tim,
     },
   ];

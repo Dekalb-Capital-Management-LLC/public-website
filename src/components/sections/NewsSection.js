@@ -16,8 +16,8 @@ export default function NewsSection() {
 
       <ScrollAnimation animation="fade-in-up" delay={400}>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <button className="btn-primary">Research Highlights</button>
-          <button className="btn-outline">News Highlights</button>
+          <button className="btn-primary">More Information Coming Soon</button>
+          {/* <button className="btn-outline">News Highlights</button> */}
         </div>
       </ScrollAnimation>
     </section>

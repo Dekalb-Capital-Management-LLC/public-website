@@ -1,12 +1,13 @@
 import React from "react";
+import quantImage from "../../assets/quant.webp";
 
 export default function QuantSection() {
     return (
         <section id="quant-section" className="bg-slate-200 text-slate-900 py-24 px-6">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                {/* Visual Graphic Placeholder */}
-                <div className="bg-white rounded-2xl shadow-xl aspect-square flex items-center justify-center text-gray-300 border border-gray-100 p-8">
-
+                {/* Visual Graphic */}
+                <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 h-[550px]">
+                    <img src={quantImage} alt="Quantitative Division" className="w-full h-full object-cover" />
                 </div>
 
                 <div>
