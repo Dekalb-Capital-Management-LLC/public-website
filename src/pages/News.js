@@ -5,7 +5,7 @@ function News() {
       <section className="py-20 px-6 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h4 className="text-blue-400 font-bold uppercase text-xs mb-4">News and Recent Trends</h4>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl text-white md:text-5xl font-bold mb-6 leading-tight">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.
           </h1>
           <div className="flex gap-4">
