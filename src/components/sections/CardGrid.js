@@ -73,6 +73,7 @@ export default function CardGrid() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Responsive breakpoints
   useEffect(() => {
@@ -92,11 +93,19 @@ export default function CardGrid() {
   }, []);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % members.length);
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setCurrentIndex((prev) => (prev + 1) % members.length);
+      setTimeout(() => setIsTransitioning(false), 700);
+    }
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + members.length) % members.length);
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setCurrentIndex((prev) => (prev - 1 + members.length) % members.length);
+      setTimeout(() => setIsTransitioning(false), 700);
+    }
   };
 
   // Get the visible members via cyclic slicing
@@ -118,17 +127,24 @@ export default function CardGrid() {
         </svg>
       </button>
 
-      {/* Grid / Slider Track */}
-      <div className="grid gap-6 sm:gap-6" style={{
-        gridTemplateColumns: `repeat(${cardsToShow}, minmax(0, 1fr))`
-      }}>
-        {visibleMembers.map((m, index) => (
-          // Using index as key prefix to force re-render on position change if needed, 
-          // or just m.name if we want stable identity (but cyclic might duplicate if items < cardsToShow? No, items=4, max cards=4)
-          // Actually, if we loop, we might have duplicates if list is small and we show many? 
-          // Here list is 4, max show is 4. No dupes in view.
-          <Card key={`${m.name}-${index}`} img={m.img} name={m.name} role={m.role} email={m.email} />
-        ))}
+      {/* Carousel Container with Overflow Hidden */}
+      <div className="overflow-hidden">
+        <div 
+          className="flex transition-transform duration-700 ease-out gap-6"
+          style={{
+            transform: `translateX(-${currentIndex * (100 / cardsToShow)}%)`
+          }}
+        >
+          {members.map((m, index) => (
+            <div 
+              key={m.name} 
+              className="flex-shrink-0"
+              style={{ width: `calc(${100 / cardsToShow}% - ${(cardsToShow - 1) * 24 / cardsToShow}px)` }}
+            >
+              <Card img={m.img} name={m.name} role={m.role} email={m.email} />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Right Arrow */}
@@ -147,7 +163,13 @@ export default function CardGrid() {
         {members.map((_, idx) => (
           <button
             key={idx}
-            onClick={() => setCurrentIndex(idx)}
+            onClick={() => {
+              if (!isTransitioning) {
+                setIsTransitioning(true);
+                setCurrentIndex(idx);
+                setTimeout(() => setIsTransitioning(false), 700);
+              }
+            }}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === currentIndex ? "bg-primary w-6" : "bg-gray-300 hover:bg-gray-400"
               }`}
             aria-label={`Go to slide ${idx + 1}`}
