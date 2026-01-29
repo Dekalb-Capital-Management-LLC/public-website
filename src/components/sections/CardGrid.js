@@ -5,6 +5,7 @@ import jennaImg from "../../assets/headshots/JennaLee.jpg";
 import jayantImg from "../../assets/headshots/Jayant.jpeg";
 import tanishq from "../../assets/headshots/TanishqHeadshot.jpg";
 import tim from "../../assets/headshots/Timheadshot.jpg";
+import yash from "../../assets/headshots/yashyardi.jpg";
 
 function Card({ img, name, role, email }) {
   return (
@@ -66,8 +67,15 @@ export default function CardGrid() {
     },
     {
       name: "Tim Schramek",
-      role: "Northern Illinois University",
+      role: "Finance @ Northern Illinois University",
+      email: "timothyschramek@dekalbcapitalmanagement.com",
       img: tim,
+    },
+     {
+      name: "Yash Yardi",
+      role: "Computer Science & Physics @ UIUC",
+      email: "yyard@illinois.edu",
+      img: yash,
     },
   ];
 
