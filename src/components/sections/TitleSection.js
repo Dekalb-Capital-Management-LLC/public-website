@@ -37,7 +37,7 @@ export default function TitleSection({
         <ScrollAnimation animation="fade-in-up" delay={400}>
           <div className="flex flex-col sm:flex-row gap-6">
             <Link to="/teams">
-              <button className="btn-primary">Our Teams -></button>
+              <button className="btn-primary">Our Teams &rarr;</button>
             </Link>
           </div>
         </ScrollAnimation>
