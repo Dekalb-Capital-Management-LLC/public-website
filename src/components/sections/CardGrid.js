@@ -6,6 +6,7 @@ import jayantImg from "../../assets/headshots/Jayant.jpeg";
 import tanishq from "../../assets/headshots/TanishqHeadshot.jpg";
 import tim from "../../assets/headshots/Timheadshot.jpg";
 import yash from "../../assets/headshots/yashyardi.jpg";
+import andrew from "../../assets/headshots/andrew.png";
 
 function Card({ img, name, role, email }) {
   return (
@@ -41,6 +42,12 @@ export default function CardGrid() {
       role: "Finance @ IU Kelley",
       email: "dlarry@dekalbcapitalmanagement.com",
       img: domImg,
+    },
+       {
+      name: "Andrew Olson",
+      role: "Business Admin @ Northern Illinois University",
+      email: "aolson@dekalbcapitalmanagement.com",
+      img: andrew,
     },
     {
       name: "Shridhar Mehendale",
@@ -104,7 +111,7 @@ export default function CardGrid() {
   const nextSlide = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
-      setCurrentIndex((prev) => (prev + 1) % members.length);
+      setCurrentIndex((prev) => (prev + cardsToShow) % members.length);
       setTimeout(() => setIsTransitioning(false), 700);
     }
   };
@@ -112,7 +119,7 @@ export default function CardGrid() {
   const prevSlide = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
-      setCurrentIndex((prev) => (prev - 1 + members.length) % members.length);
+      setCurrentIndex((prev) => (prev - cardsToShow + members.length) % members.length);
       setTimeout(() => setIsTransitioning(false), 700);
     }
   };
