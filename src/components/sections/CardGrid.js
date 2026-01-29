@@ -62,7 +62,8 @@ export default function CardGrid() {
     },
     {
       name: "Tanishq Nerkar",
-      role: "IU Kelley",
+      role: "Finance & Computer Science @ IU Kelley",
+      email: "tnerkar@iu.edu",
       img: tanishq,
     },
     {
