@@ -61,12 +61,12 @@ export default function CardGrid() {
     },
     {
       name: "Tanishq Nerkar",
-      role: "Northern Illinois University",
+      role: "IU Kelley",
       img: tanishq,
     },
     {
       name: "Tim Schramek",
-      role: "IU Kelley",
+      role: "Northern Illinois University",
       img: tim,
     },
   ];
