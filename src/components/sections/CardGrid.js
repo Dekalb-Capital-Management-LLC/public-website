@@ -76,7 +76,7 @@ export default function CardGrid() {
     {
       name: "Tim Schramek",
       role: "Finance @ Northern Illinois University",
-      email: "timothyschramek@dekalbcapitalmanagement.com",
+      email: "tschramek@dekalbcapitalmanagement.com",
       img: tim,
     },
      {
