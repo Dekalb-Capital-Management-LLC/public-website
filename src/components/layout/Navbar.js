@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logos/logoDark.png';
 
 function Navbar() {
   return (
-    <nav className="bg-white/95 backdrop-blur-md flex justify-between items-center px-8 py-5 shadow-lg sticky top-0 z-50 border-b border-gray-100 animate-fade-in">
-      <div className="text-base md:text-xl font-bold font-heading tracking-tight hover:text-primary transition-colors duration-300">Dekalb Capital Management LLC</div>
+    <nav className="bg-white/95 backdrop-blur-md flex justify-between items-center px-8 py-1 shadow-lg sticky top-0 z-50 border-b border-gray-100 animate-fade-in">
+      <img src={logo} alt="Dekalb Capital Management LLC" className="h-10 md:h-14 hover:opacity-80 transition-opacity duration-300" />
       <div className="flex gap-8">
         <Link to="/" className="text-sm md:text-base font-medium hover:text-primary transition-all duration-300 relative group">
           Home
