@@ -25,9 +25,6 @@ export default function TeamSection() {
                     </div>
                 </ScrollAnimation>
 
-                {/* University Logos Row */}
-                <UniversityLogosRow />
-
                 <CardGrid />
             </div>
         </section>
