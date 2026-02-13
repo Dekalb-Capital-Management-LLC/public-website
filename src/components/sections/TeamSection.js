@@ -1,5 +1,4 @@
 import React from "react";
-import UniversityLogosRow from "./UniversityLogosRow";
 import CardGrid from "./CardGrid";
 import ScrollAnimation from "../common/ScrollAnimation";
 
