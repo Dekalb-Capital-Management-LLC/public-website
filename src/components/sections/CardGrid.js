@@ -58,7 +58,7 @@ export default function CardGrid() {
     {
       name: "Jenna Lee",
       role: "Computer Science @ UT Austin",
-      email: "jenna.snow.lee@gmail.com",
+      email: "jlee@dekalbcapitalmanagement.com",
       img: jennaImg,
     },
     {
