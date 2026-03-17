@@ -15,10 +15,10 @@ export default function AboutSection() {
         <ScrollAnimation animation="fade-in-up" delay={200}>
           <div className="text-lg space-y-8 mb-12 text-gray-100 text-left leading-relaxed font-light drop-shadow-md max-w-6xl mx-auto">
             <p>
-              Our inaugural year focused on building a disciplined operational framework and developing a proprietary in-house trading engine to facilitate seamless, real-time execution. Following a first year of strong portfolio performance, we have since transitioned into a growth phase, significantly expanding our head count and scaling research initiatives across both our Quantitative and Equities divisions.
+              Our inaugural year focused on building a disciplined operational framework and developing a proprietary in-house trading engine to facilitate seamless, real-time execution. Following a first year of strong portfolio performance, we have since transitioned into a growth phase, significantly expanding our head count and scaling research initiatives across divisions.
             </p>
             <p>
-              Following a successful first year marked by strong portfolio performance, we entered our second year with a focus on scale. We have significantly expanded our team, launched new research projects, and are aggressively growing both our Quantitative and Equities divisions.
+              Following a successful first year marked by strong portfolio performance, we entered our second year with a focus on scale. We have significantly expanded our team, launched new research projects, and are aggressively growing our divisions.
             </p>
           </div>
         </ScrollAnimation>

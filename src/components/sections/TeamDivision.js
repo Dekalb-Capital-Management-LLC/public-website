@@ -31,18 +31,18 @@ export default function TeamDivision() {
 
                 <ScrollAnimation animation="fade-in-up" delay={200}>
                     <p className="text-lg md:text-lg text-left text-gray-200 mb-12 leading-relaxed font-light">
-                        Our firm operates through two complementary investment teams—Quantitative and Equities—each applying distinct methodologies to uncover market opportunities. Together, they combine systematic research, fundamental analysis, and disciplined execution to pursue durable, market-beating returns.
+                        Our firm operates through our Equities team - applying distinct methodologies to uncover market opportunities, systematic research, fundamental analysis, and disciplined execution to pursue durable, market-beating returns.
                     </p>
                 </ScrollAnimation>
 
                 <ScrollAnimation animation="fade-in-up" delay={400}>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button
+                        {/* <button
                             onClick={() => scrollToSection('quant-section')}
                             className="btn-primary"
                         >
                             Explore Quantitative Strategies
-                        </button>
+                        </button> */}
                         <button
                             onClick={() => scrollToSection('equities-section')}
                             className="btn-outline text-white border-white hover:bg-white hover:text-primary"

@@ -6,7 +6,7 @@ function Teams() {
   return (
     <div className="bg-white min-h-screen">
       <TeamDivision />
-      <QuantSection />
+      {/* <QuantSection /> */}
       <EquitiesSection />
     </div>
   );
