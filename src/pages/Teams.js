@@ -1,5 +1,5 @@
 import TeamDivision from "../components/sections/TeamDivision";
-import QuantSection from "../components/sections/QuantSection";
+// import QuantSection from "../components/sections/QuantSection";
 import EquitiesSection from "../components/sections/EquitiesSection";
 
 function Teams() {
